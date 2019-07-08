@@ -23,6 +23,7 @@ get '/random-cat' do
 end
 
 get '/named-cat' do
-  @cat = params[:name]
+  p params
+ @cat = params[:name]
     erb(:index)
 end
